@@ -9,16 +9,31 @@ The GUI features five different screens: the Main screen (where the user starts)
 
 Each screen displays information dedicated to it and features custom artwork. Each screen shows a cat themed around the current weather conditions; if the weather changes, so do the cats. All the images are designed to tell the user what the conditions are outside at a quick glance. 
 
-This project incorporates many elements of JavaFX to create the GUIs and give them the required functionality. The API was designed and implemented by Professor McCarty, and the GUI design and program were designed and implemented by Ashley Daly.
+This project incorporates many elements of JavaFX to create the GUIs and give them the required functionality.
 
 ## Installiation
-To install the project:
-  1. Clone the repo
-     ```
-     git clone
-     ```
-  2. 
+To install the project, you must clone the repo using:
+   ```
+   git clone https://github.com/AshleyD50/Cat-Weather-App.git
+   ```
+Once cloned, you might need to install Apache Maven if it is not already installed. Download Maven here: https://maven.apache.org/download.cgi
 
 ## Running the Code
+Once installed, you can run the code. I developed and ran the code in IntelliJ, so I recommend running it there.
+Each time you run, I recommend running the clean command each time.
+
+To run in IntelliJ, under Run, go to Edit Configurations and add a Maven configuration. In the run line of that configuration, add
+```
+clean compile exec:java
+```
+Ensure you have the correct working directory and hit ok to save it. Then you can press the run button to run the project under that configuration.
+
+To run in the terminal, you need to navigate to the root directory of the project, where the pom.xml file is located. Then run the command
+```
+mvn clean compile exec:java
+```
+
+The GUI should then load in, and the project is running!
 
 ## Acknowledgements
+Credits for the project idea, the API design, and the API implementation go to Professor McCarty.
