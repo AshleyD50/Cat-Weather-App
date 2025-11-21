@@ -22,16 +22,28 @@ Once cloned, you might need to install Apache Maven if it is not already install
 Once installed, you can run the code. I developed and ran the code in IntelliJ, so I recommend running it there.
 Each time you run, I recommend running the clean command each time.
 
-To run in IntelliJ, under Run, go to Edit Configurations and add a Maven configuration. In the run line of that configuration, add
-```
-clean compile exec:java
-```
-Ensure you have the correct working directory and hit ok to save it. Then you can press the run button to run the project under that configuration.
+<ins> Run in IntelliJ</ins>
+   1. Running
+      To run in IntelliJ, under Run, go to Edit Configurations and add a Maven configuration. In the run line of that configuration, add
+      ```
+      clean compile exec:java
+      ```
+   2. Cleaning
+      To just clean in IntelliJ, either modify an old Maven configuration or create a new one that just has `clean` in the run line.
+      
+      Ensure you have the correct working directory and hit ok to save it. Then you can press the run button to run the project under that configuration.
 
-To run in the terminal, you need to navigate to the root directory of the project, where the pom.xml file is located. Then run the command
-```
-mvn clean compile exec:java
-```
+<ins> Run in the Terminal</ins>
+   1. Running
+      To run in the terminal, you need to navigate to the root directory of the project, where the pom.xml file is located. Then run the command
+      ```
+      mvn clean compile exec:java
+      ```
+   2. Cleaning
+      To just clean in the terminal, run the command
+      ```
+      mvn clean
+      ```
 
 The GUI should then load in, and the project is running!
 
