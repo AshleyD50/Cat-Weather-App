@@ -3,7 +3,7 @@
 ## Summary
 This project is a cat-themed weather App. 
 
-It uses an API to pull real-time weather data for any location. The data then gets displayed to the user through a GUI. The program displays information about the short forecast (a quick description of the weather), the probability of precipitation, the wind speed and direction, the long forecast (a detailed description of the weather), a 3-, 5-, or 7-day forecast, and the date and time. All of this information is not displayed on just one screen. 
+It uses an API to pull real-time weather data for any location. However, this app only displays weather data for Chicago. The data then gets displayed to the user through a GUI. The program displays information about the short forecast (a quick description of the weather), the probability of precipitation, the wind speed and direction, the long forecast (a detailed description of the weather), a 3-, 5-, or 7-day forecast, and the date and time. All of this information is not displayed on just one screen. 
 
 The GUI features five different screens: the Main screen (where the user starts), the More Information screen, the 3-Day Forecast screen, the 5-Day Forecast screen, and the 6-Day Forecast screen. Each screen is able to go back to the previous screen (meaning there are no dead ends and the user cannot get stuck on any screen). The main screen has access to the other 4 screens. 
 
@@ -46,6 +46,23 @@ Each time you run, I recommend running the clean command each time.
       ```
 
 The GUI should then load in, and the project is running!
+
+## Project Explained
+After you get the project running and open the GUI, there are many features to explore. 
+
+1. The Main Screen (the screen you start on) displays the current weather and a cat themed to those conditions. Then from that screen, you have 4 options: the More Info Screen, the 3-Day Forecast Screen, the 5-Day Forecast Screen, or the 7-Day Forecast Screen. By clicking any of the respective buttons, you will move to the next screen. All screens will have a back button that takes you back to the Main Screen, so you will never get stuck on one screen.
+
+2. The More Info Screen displays a more detailed forecast and conditions for the day. It also features the themed cat "dancing" by having it rotate at an angle nonstop. This screen also has custom "The Forecast" art. Press the back button to return to the Main Screen, which will allow you to access the other screens.
+
+3. The 3-Day Forecast Screen displays the forecast for the next 3 days. This screen still displays the themed cat along with the weather data. It shows the short forecast for each period of the next 3 days. Each period represents either the morning or the evening of the day, so 2 periods make up one full day. Press the back button to return to the Main Screen, which will allow you to access the other screens.
+
+4. The 5-Day Forecast Screen displays the forecast for the next 5 days. This screen still displays the themed cat along with the weather data. It shows the short forecast for each period of the next 5 days. Press the back button to return to the Main Screen, which will allow you to access the other screens.
+
+5. The 7-Day Forecast Screen displays the forecast for the next 7 days. This screen still displays the themed cat along with the weather data. It shows the short forecast for each period of the next 7 days. Press the back button to return to the Main Screen, which will allow you to access the other screens.
+
+After you have explored all the screens, you should have a good idea of Chicago's weather! To exit the app, you can just close the GUI screen or manually stop the program from running.
+
+## Video Demo
 
 ## Acknowledgements
 Credits for the project idea, the API design, and the API implementation go to Professor McCarty.
