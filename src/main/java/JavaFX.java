@@ -34,6 +34,7 @@ import javafx.scene.layout.*;
 import javafx.util.Duration;
 
 import javafx.scene.control.Button;
+import javafx.scene.control.ScrollPane;
 import javafx.scene.text.Text;
 import javafx.stage.Stage;
 import weather.Period;
@@ -52,6 +53,7 @@ public class JavaFX extends Application {
 	HBox temperatureHBox, weatherHBox, daysHBox;
 	VBox v1, descriptionVBox;
 	Region space1, space2, space3, space4, space5, space6;
+	ScrollPane scroll;
 
 
 	public static void main(String[] args) {
@@ -423,6 +425,15 @@ public class JavaFX extends Application {
 		detailedWeather.setText(String.valueOf(forecast.get(0).detailedForecast));
 		String detailedForecast = String.valueOf(forecast.get(0).detailedForecast);
 		addNewlines(forecast, 4, detailedWeather, detailedForecast);
+
+		String color = getColor(forecast);
+
+		// creates a scroll pane for the detailed forecast
+		scroll = new ScrollPane(detailedWeather);
+		scroll.setFitToWidth(true);
+		scroll.setPannable(true);
+		scroll.setPrefViewportHeight(300);
+		scroll.setStyle("-fx-background-color: " + color + ";");
 	}
 
 	// this function sets up the main screen of the GUI. it calls all the helper function to set up all the elements
@@ -520,7 +531,7 @@ public class JavaFX extends Application {
 		HBox timeDate = new HBox(20, time, date);
 		HBox temp = new HBox(10, icon, temperature);
 		VBox currentDayDetails = new VBox(20, timeDate, temp, cat);
-		VBox info = new VBox(windSpeed, windDirection, detailedWeather, forecastPic);
+		VBox info = new VBox(windSpeed, windDirection, scroll, forecastPic);
 		HBox infoScene = new HBox(currentDayDetails, info);
 
 		// creates the pane for the screen and adds all the previously created Vboxes and HBoxes
@@ -530,7 +541,6 @@ public class JavaFX extends Application {
 
 		return new Scene(pane, 700,700);
 	}
-	//feel free to remove the starter code from this method
 
 	// this function starts the GUI. it creates the main screen by calling the helper function, and creates the pane for
 	// all the GUIs. it sets the pane to the primary stage and shows it so the user can see the GUI
