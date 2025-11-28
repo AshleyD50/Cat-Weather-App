@@ -11,7 +11,7 @@ Each screen displays information dedicated to it and features custom artwork. Ea
 
 This project incorporates many elements of JavaFX to create the GUIs and give them the required functionality.
 
-## Installiation
+## Installation
 To install the project, you must clone the repo using:
    ```
    git clone https://github.com/AshleyD50/Cat-Weather-App.git
