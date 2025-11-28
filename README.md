@@ -63,8 +63,7 @@ After you get the project running and open the GUI, there are many features to e
 After you have explored all the screens, you should have a good idea of Chicago's weather! To exit the app, you can just close the GUI screen or manually stop the program from running.
 
 ## Video Demo
-[![Cat Weather App Demo](https://img.youtube.com/vi/fIyaK1NkiWQ/0.jpg)]
-(https://www.youtube.com/watch?v=fIyaK1NkiWQ)
+[![Cat Weather App Demo](https://img.youtube.com/vi/fIyaK1NkiWQ/0.jpg)](https://www.youtube.com/watch?v=fIyaK1NkiWQ)
 
 ## Acknowledgements
 Credits for the project idea, the API design, and the API implementation go to Professor McCarty.
